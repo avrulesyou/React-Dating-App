@@ -1,0 +1,8 @@
+set timeout -1
+spawn eas build -p android
+match_max 100000
+
+expect "Generate*"
+send -- "y"
+
+expect eof

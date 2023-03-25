@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Kupple",
+    "slug": "kupple-app",
+    "scheme": "kupple-app",
+    "description": "My app powered by Draftbit",
+    "privacy": "unlisted",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.2.4",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#5A45FF"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.kupple",
+      "supportsTablet": false,
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Kupple uses photos to upload photos to your profile.",
+        "NSPhotoLibraryUsageDescription": "Kupple uses photos to upload photos to your profile.",
+        "NSContactsUsageDescription": "This app uses contacts to add double dating team members.",
+        "NSLocationWhenInUseUsageDescription": "This app uses the location to better match you with people nearby."
+      },
+      "usesIcloudStorage": false
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.kupple",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_CONTACTS"
+      ]
+    },
+    "web": {
+      "themeColor": "#000000"
+    },
+
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.0",
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+
+    "notification": {
+      "androidMode": "default"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "738dc38a-c943-47b1-8177-a58f47de5700"
+      }
+    }
+  }
+}

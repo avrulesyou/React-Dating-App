@@ -1,0 +1,47 @@
+{
+  "cli": {
+    "version": ">= 2.4.0"
+  },
+  "build": {
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal"
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "previewSimulator": {
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "parth.patel1@bacancy.com",
+        "ascAppId": "6444063285",
+        "appleTeamId": "2NB3J9SLA9"
+      }
+    }
+  }
+}
