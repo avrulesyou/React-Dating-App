@@ -1,4 +1,4 @@
-# Welcome to your Datingbit app!
+# Welcome to your Dating app!
 
 This `README` is designed to help you get your Draftbit app running locally. Read
 through the next few sections carefully, and if you encounter any issues please
